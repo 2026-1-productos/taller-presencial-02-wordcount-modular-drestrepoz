@@ -41,6 +41,7 @@ def test_homework():
             key, value = line.strip().split("\t")
             result[key] = int(value)
 
+            #Haciendo la tarea
     assert result.get("analytics", 0) == 5, "Incorrect count for 'analytics'"
     assert result.get("business", 0) == 7, "Incorrect count for 'business'"
     assert result.get("by", 0) == 3, "Incorrect count for 'by'"
